@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div>
+<h2>Our current flavours:</h2> 
+
+<div>
+    {% for flavour in flavours %}
+    <div>
+    <a href='/flavours/{{flavour.flavour}}'> {{flavour.flavour}} </a>
+    </div>
+    {% endfor %}
+<div>
+{% endblock %}
