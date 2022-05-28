@@ -1,8 +1,11 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-<h2>{{flavour.flavour}}</h2>
+<div class="individual-favour">
+<h2>{{flavour.flavour | upper}}</h2>
 <p>{{flavour.description}}<p>
-<img src='{{flavour.image}}'<img>
+<img src='{{flavour.image}}' alt={{flavour.flavour}}></img>
+</div>
+
 
 {% endblock %}
