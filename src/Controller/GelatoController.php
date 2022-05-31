@@ -12,7 +12,7 @@ class GelatoController extends AbstractController
     #[Route('/', name: 'app_gelato')]
     public function homepage(): Response
     {
-        return $this->render('gelato/homepage.html.twig', ['title' => 'Gelato']);
+        return $this->render('gelato/homepage.html.twig');
     }
 
     #[Route('/flavours/{slug}')]
@@ -32,4 +32,14 @@ class GelatoController extends AbstractController
         }
         return $this->render('gelato/flavours.html.twig', ['flavours' => $flavours]);
     }
+
+    #[Route('/visitus')]
+    public function visitus(): Response {
+
+        $address = ['street' => '147 Lordship Ln', 'city' => 'London','postcode' => 'SE22 8HX'];
+
+        return $this->render('gelato/visitus.html.twig', ['address' => $address]);
+    }
 }
+
+

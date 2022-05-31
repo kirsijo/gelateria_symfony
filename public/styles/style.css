@@ -59,17 +59,10 @@ p {
   font-size: 1.5rem;
 }
 
+.flavour-list,
+.about-us,
+.address,
 .individual-favour {
-  text-align: center;
-  padding: 20px;
-}
-
-.flavour-list {
-  text-align: center;
-  padding: 20px;
-}
-
-.about-us {
   text-align: center;
   padding: 20px;
 }
